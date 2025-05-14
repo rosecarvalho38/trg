@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fontes */
+  @font-face {
+    font-family: 'Bachelors Display';
+    src: url('../../fonts/BachelorsDisplay.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Comfortaa';
+    src: url('../../fonts/Comfortaa-Regular.ttf') format('truetype');
+  }
+  
+  /* Corpo */
+  body {
+    font-family: 'Comfortaa', sans-serif;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+ .background-container {
+  /* background-image: url('Fundo.png'); */
+  background-color: #3570a1;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+}
+  
+  /* Seção Head */
+  .head-section {
+    position: relative;
+    text-align: center;
+  }
+  
+  .logo-head {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    max-width: 60px;
+    z-index: 10;
+  }
+  
+  .head-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .headline {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .headline h1 {
+    font-family: 'Bachelors Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .subheadline {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: none; /* <- aqui garantimos que não fique em caixa alta */
+  }
+  
+  /* Divisória */
+  .divider img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Texto Central */
+  .texto-central {
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -30px;
+  }
+  
+  .cta-instruction {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    max-width: 260px; /* ou o tamanho ideal para o CTA.png */
+    width: 100%;
+    margin: 0 auto;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cta-button img {
+    width: 100%;
+    height: auto; /* mantém a proporção natural da imagem */
+    display: block;
+  }
+  
+  
+  /* Rodapé com sobreposição */
+.footer {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 220px;
+  overflow: hidden;
+}
+
+.footer-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.footer-overlay {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px; /* Aumentado para centralizar verticalmente */
+  }
+
+.footer-logo {
+  max-width: 120px;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  margin: -30px;
+  line-height: 1.4;
+}  
+  
+  /* Pulse animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .headline h1 {
+      font-size: 1.3rem;
+    }
+  
+    .headline p {
+      font-size: 0.9rem;
+    }
+  
+    .texto-central {
+      font-size: 0.95rem;
+      padding: 30px 15px;
+    }
+  
+    .cta-button {
+      width: 220px;
+    }
+  }
+  
