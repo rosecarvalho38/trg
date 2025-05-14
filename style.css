@@ -8,12 +8,12 @@
   /* Fontes */
   @font-face {
     font-family: 'Bachelors Display';
-    src: url('../../fonts/BachelorsDisplay.ttf') format('truetype');
+    src: url('BachelorsDisplay.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Comfortaa';
-    src: url('../../fonts/Comfortaa-Regular.ttf') format('truetype');
+    src: url('Comfortaa-Regular.ttf') format('truetype');
   }
   
   /* Corpo */
@@ -26,7 +26,7 @@
   }
   
   .background-container {
-    background-image: url('../img/fundo.png');
+    background-image: url('fundo.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
