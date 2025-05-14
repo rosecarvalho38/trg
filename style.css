@@ -112,7 +112,7 @@
   }
   
   .cta-button {
-    max-width: 260px; /* ou o tamanho ideal para o CTA.png */
+    max-width: 360px; /* ou o tamanho ideal para o CTA.png */
     width: 100%;
     margin: 0 auto;
     animation: pulse 2s infinite;
