@@ -153,13 +153,13 @@
 
 .footer-logo {
   max-width: 100px;
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
   display: block;
 }
 
 .footer p {
   font-size: 0.8rem;
-  margin: -30px;
+  margin: 0px;
   line-height: 1.4;
 }  
   
